@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Jasmine A. Nalda — Fresh Graduate in Information Technology. Portfolio showcasing projects, skills, and experience." />
+  <title>Jasmine A. Nalda | IT Portfolio</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg" />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Devicons (tool logos) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="#hero" class="nav-logo"><b>JN</b></a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <!-- <li><a href="#certifications">Certifications</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Controls: Theme Toggle + Hamburger -->
+      <div class="nav-controls" style="display:flex;align-items:center;gap:12px;">
+        <button id="theme-toggle" aria-label="Toggle light/dark mode">
+          <i id="icon-sun" class="fa-solid fa-sun" style="display:none;"></i>
+          <i id="icon-moon" class="fa-solid fa-moon"></i>
+        </button>
+        <button id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero">
+    <div class="container hero-inner">
+
+      <!-- Left Column: Content -->
+      <div class="hero-content fade-in-left">
+        <span class="hero-greeting">Hi, I'm</span>
+        <h1 class="hero-name">Jasmine A. Nalda</h1>
+
+        <div class="hero-tag-typing">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          A fresh graduate with a passion for technology and a willingness to learn. I enjoy working with data
+          presentation, supporting others, and taking on new challenges.
+        </p>
+
+        <div class="hero-cta">
+          <a href="resume.pdf" target="_blank" class="btn-primary" id="btn-view-resume">
+            <i class="fa-solid fa-eye"></i> View Resume
+          </a>
+          <!-- <a href="resume.pdf" download class="btn-outline" id="btn-download-resume">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a> -->
+          <a href="#contact" class="btn-outline" id="btn-contact-hero">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="mailto:jasminenalda20@gmail.com?subject=Job%20Opportunity&body=Hi%20Jasmine," class="social-icon"
+            aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://www.facebook.com/jasmine.nalda.0722/" class="social-icon" aria-label="Facebook"
+            id="social-facebook" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jasminenalda" class="social-icon" aria-label="LinkedIn"
+            id="social-linkedin" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/PinkyBun" class="social-icon" aria-label="GitHub" id="social-github"
+            target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Image + Circle -->
+      <div class="hero-image-wrap fade-in-right">
+        <div class="hero-circle"></div>
+        <div class="hero-avatar-container">
+          <div class="hero-avatar-inner">
+            <div class="hero-avatar-front">
+              <img src="images/profile/profile-light.jpg" alt="Jasmine A. Nalda (Light Mode)" class="hero-avatar"
+                onerror="this.src='images/profile/profile-photo.png'" />
+            </div>
+            <div class="hero-avatar-back">
+              <img src="images/profile/profile-dark.jpg" alt="Jasmine A. Nalda (Dark Mode)" class="hero-avatar"
+                onerror="this.src='images/profile/profile-photo.png'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT ME
+       ============================================================ -->
+  <section id="about" class="section">
+
+    <div class="container">
+      <p class="section-label">About Me</p>
+      <div class="about-grid fade-up">
+
+        <!-- Left: Quick Facts (Glassmorphism Card) -->
+        <div class="about-facts-wrap">
+          <div class="about-facts-card">
+            <h3 class="facts-title">Quick Facts</h3>
+            <ul class="facts-list">
+              <li><i class="fa-solid fa-graduation-cap fact-icon"></i> <span class="fact-text">Graduated in BS
+                  Information Technology </span>
+              </li>
+              <li><i class="fa-solid fa-briefcase fact-icon"></i> <span class="fact-text">4 Months OJT</span></li>
+              <li><i class="fa-solid fa-location-dot fact-icon"></i> <span class="fact-text">Malabon City, PH</span>
+              </li>
+              <li><i class="fa-solid fa-flag fact-icon"></i> <span class="fact-text">Filipino</span></li>
+              <li><i class="fa-solid fa-cake-candles fact-icon"></i> <span class="fact-text">21 Years Old</span></li>
+            </ul>
+          </div>
+          <div class="about-card-glow"></div>
+        </div>
+
+        <!-- Right: Text Content -->
+        <div class="about-text-content">
+
+          <h2 class="section-title">Hi, I'm Jasmine!</h2>
+
+          <div class="about-item">
+            <h4 class="about-item-title">Who I Am</h4>
+            <p>A fresh graduate in Bachelor of Science
+              in Information Technology from Systems Plus Computer College - Caloocan.
+              I completed my OJT at the Department of Transportation —
+              MRT3 Depot Office where I gained real-world experience in
+              data entry, record keeping, and office documentation. On the side, I also enjoy building
+              web and mobile applications as part of my academic projects.</p>
+          </div>
+
+          <div class="about-item">
+            <h4 class="about-item-title">What I Can Do</h4>
+            <p>I can help with data entry and organization, report
+              preparation, document management, basic IT support, and
+              design tasks using tools like MS Office, Google Workspace,
+              Canva, Figma, and Power BI. I also have a background in developing simple systems and applications for
+              academic requirements.
+              I'm comfortable working in both office and remote environments.</p>
+          </div>
+
+          <div class="about-item">
+            <h4 class="about-item-title">What I'm Looking For</h4>
+            <p>I'm looking for an entry-level opportunity where I can
+              apply my skills, continue learning, and grow in a
+              professional environment. I'm open to roles in administrative support,
+              data management, IT support, development or any position
+              where I can contribute and develop my career.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       EXPERIENCE
+       ============================================================ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-label fade-up">EXPERIENCE</p>
+      <h2 class="section-title fade-up">Work & Projects</h2>
+      <div class="section-divider fade-up"></div>
+
+      <div class="exp-grid">
+
+        <!-- OJT Card (Horizontal) -->
+        <div class="exp-ojt-card fade-up">
+          <div class="ojt-img-wrap">
+            <img src="images/experience/ojt-photo.jpg" alt="OJT at DOTR MRT3" class="ojt-img"
+              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 250%22%3E%3Crect width=%22300%22 height=%22250%22 fill=%22%23ede9fe%22/%3E%3Crect x=%2230%22 y=%2230%22 width=%22240%22 height=%22140%22 rx=%2210%22 fill=%22%23a78bfa%22 opacity=%220.3%22/%3E%3Crect x=%2250%22 y=%22190%22 width=%22200%22 height=%2212%22 rx=%226%22 fill=%22%23a78bfa%22 opacity=%220.4%22/%3E%3Crect x=%2280%22 y=%22212%22 width=%22140%22 height=%2212%22 rx=%226%22 fill=%22%23a78bfa%22 opacity=%220.25%22/%3E%3C/svg%3E'" />
+          </div>
+          <div class="ojt-body">
+            <span class="exp-badge"><i class="fa-solid fa-briefcase"></i> OJT</span>
+            <p class="ojt-title">On-the-Job Training</p>
+            <p class="ojt-company">Department of Transportation — MRT3 Depot Office, Station Division</p>
+            <p class="ojt-date"><i class="fa-regular fa-calendar"></i> January 2026 – April 2026</p>
+            <p class="project-desc">Handled daily encoding, record-keeping, and documentation tasks while gaining
+              practical experience in a professional government environment at the Department of Transportation — MRT3
+              Depot Office.</p>
+            <button class="btn-text" data-modal="ojt">View Photos →</button>
+          </div>
+        </div>
+
+        <!-- Academic & Personal Projects -->
+        <div class="projects-header fade-up">
+          <p class="section-label-sm">ACADEMIC & PERSONAL PROJECTS</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Card 1 — Data & Reporting -->
+          <div class="project-card fade-up">
+            <span class="project-icon">📊</span>
+            <p class="project-title">Data & Reporting</p>
+            <p class="project-tools">Power BI · Excel</p>
+            <p class="project-desc">Organized data and prepared visual reports and charts for documentation purposes.
+            </p>
+          </div>
+
+          <!-- Card 2 — Documentation & Reporting -->
+          <div class="project-card fade-up">
+            <span class="project-icon">📝</span>
+            <p class="project-title">Documentation & Reporting</p>
+            <p class="project-tools">MS Word · Google Docs</p>
+            <p class="project-desc">Prepared and maintained documents and reports for operational and academic purposes.
+            </p>
+          </div>
+
+          <!-- Card 3 — Design & Media -->
+          <div class="project-card fade-up">
+            <span class="project-icon">🎨</span>
+            <p class="project-title">Design & Media</p>
+            <p class="project-tools">Canva · Figma</p>
+            <p class="project-desc">Created visual materials, designs, and mockups for academic and personal projects.
+            </p>
+          </div>
+
+          <!-- Card 4 — IT & Technical Support -->
+          <div class="project-card fade-up">
+            <span class="project-icon">🖥️</span>
+            <p class="project-title">IT & Technical Support</p>
+            <p class="project-tools">Computer Setup · Troubleshooting</p>
+            <p class="project-desc">Set up computers, installed applications, and assisted users with common technical
+              issues.</p>
+          </div>
+        </div><!-- /projects-grid -->
+
+        <!-- See My Work CTA -->
+        <div class="see-my-work-wrap fade-up" style="text-align: center; margin-top: 40px;">
+          <button class="btn-primary" id="btn-see-my-work">
+            See My Work →
+          </button>
+        </div>
+
+      </div><!-- /exp-grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="section-label fade-up">SKILLS</p>
+      <h2 class="section-title fade-up">What I Bring</h2>
+      <div class="section-divider fade-up"></div>
+
+      <!-- 1. Technical Skills (Auto-scroll Left) -->
+      <div class="skills-group fade-up">
+        <p class="skills-group-label">TECHNICAL SKILLS</p>
+        <div class="marquee-wrapper">
+          <div class="marquee-track scroll-left">
+            <!-- Set 1 -->
+            <div class="skill-card-wide">
+              <span class="skill-icon">📋</span>
+              <p class="skill-title">Office & Productivity</p>
+              <div class="skill-tags">
+                <span class="skill-tag">MS Office</span>
+                <span class="skill-tag">Google Workspace</span>
+              </div>
+            </div>
+            <div class="skill-card-wide">
+              <span class="skill-icon">📁</span>
+              <p class="skill-title">Administrative Support</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Email Management</span>
+                <span class="skill-tag">Data Entry</span>
+                <span class="skill-tag">Spreadsheet Management</span>
+                <span class="skill-tag">Report Creation</span>
+              </div>
+            </div>
+            <div class="skill-card-wide">
+              <span class="skill-icon">🎨</span>
+              <p class="skill-title">Design & Media</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Canva</span>
+                <span class="skill-tag">Figma</span>
+              </div>
+            </div>
+            <div class="skill-card-wide">
+              <span class="skill-icon">📊</span>
+              <p class="skill-title">Data & Analytics</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Power BI</span>
+              </div>
+            </div>
+            <!-- Duplicate for loop -->
+            <div class="skill-card-wide">
+              <span class="skill-icon">📋</span>
+              <p class="skill-title">Office & Productivity</p>
+              <div class="skill-tags">
+                <span class="skill-tag">MS Office</span>
+                <span class="skill-tag">Google Workspace</span>
+              </div>
+            </div>
+            <div class="skill-card-wide">
+              <span class="skill-icon">📁</span>
+              <p class="skill-title">Administrative Support</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Email Management</span>
+                <span class="skill-tag">Data Entry</span>
+                <span class="skill-tag">Spreadsheet Management</span>
+                <span class="skill-tag">Report Creation</span>
+              </div>
+            </div>
+            <div class="skill-card-wide">
+              <span class="skill-icon">🎨</span>
+              <p class="skill-title">Design & Media</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Canva</span>
+                <span class="skill-tag">Figma</span>
+              </div>
+            </div>
+            <div class="skill-card-wide">
+              <span class="skill-icon">📊</span>
+              <p class="skill-title">Data & Analytics</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Power BI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Core Competencies (Static) -->
+      <div class="skills-group fade-up">
+        <p class="skills-group-label">CORE COMPETENCIES</p>
+        <div class="competency-pills-wrap">
+          <span class="comp-pill">Effective Communication</span>
+          <span class="comp-pill">Organization & Time Management</span>
+          <span class="comp-pill">Multitasking & Prioritization</span>
+          <span class="comp-pill">Adaptability</span>
+          <span class="comp-pill">Detail-Oriented</span>
+          <span class="comp-pill">Fast Learner</span>
+          <span class="comp-pill">Takes Initiative</span>
+          <span class="comp-pill">Works Well Under Pressure</span>
+          <span class="comp-pill">Reliable</span>
+        </div>
+      </div>
+
+      <!-- 3. Tools & Platforms (Auto-scroll Right) -->
+      <div class="skills-group fade-up">
+        <p class="skills-group-label">TOOLS & PLATFORMS</p>
+        <div class="marquee-wrapper">
+          <div class="marquee-track scroll-right">
+            <!-- Set 1 -->
+            <div class="tool-badge">G Google Workspace</div>
+            <div class="tool-badge">📊 MS Office</div>
+            <div class="tool-badge">🎨 Canva</div>
+            <div class="tool-badge">🖊️ Figma</div>
+            <div class="tool-badge">📈 Power BI</div>
+            <!-- Duplicate for loop -->
+            <div class="tool-badge">G Google Workspace</div>
+            <div class="tool-badge">📊 MS Office</div>
+            <div class="tool-badge">🎨 Canva</div>
+            <div class="tool-badge">🖊️ Figma</div>
+            <div class="tool-badge">📈 Power BI</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       EDUCATION
+       ============================================================ -->
+  <section id="education" class="section">
+    <div class="container">
+      <p class="section-label fade-up">Education</p>
+      <h2 class="section-title fade-up">Academic Background</h2>
+      <div class="section-divider fade-up"></div>
+
+      <div class="education-timeline fade-up">
+
+        <!-- College -->
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <p class="edu-school">Systems Plus Computer College</p>
+            <p class="edu-program">Bachelor of Science in Information Technology</p>
+            <div class="edu-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2022 – 2026</span>
+              <span><i class="fa-solid fa-location-dot"></i> Caloocan City</span>
+            </div>
+            <p class="edu-honor">GWA: </p>
+          </div>
+        </div>
+
+        <!-- Senior High -->
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <p class="edu-school">Arellano University – Elisa Esquerra Campus</p>
+            <p class="edu-program">Senior High School — Science, Technology, Engineering, and Mathematics
+              (STEM) </p>
+            <div class="edu-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2020 – 2022</span>
+              <span><i class="fa-solid fa-location-dot"></i> Malabon City</span>
+            </div>
+            <p class="edu-honor">Graduated with Highest Honors</p>
+          </div>
+        </div>
+
+        <!-- Junior High -->
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <p class="edu-school">Macario B. Asistio Sr. High School</p>
+            <p class="edu-program">Junior High School</p>
+            <div class="edu-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2016 – 2020</span>
+              <span><i class="fa-solid fa-location-dot"></i> Caloocan City</span>
+            </div>
+            <p class="edu-honor">Academic Awardee</p>
+          </div>
+        </div>
+
+        <!-- Elementary -->
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-card">
+            <p class="edu-school">Domingo V. Abawag Elementary School</p>
+            <p class="edu-program">Primary Education</p>
+            <div class="edu-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2013 – 2016</span>
+              <span><i class="fa-solid fa-location-dot"></i> Digos City</span>
+            </div>
+            <p class="edu-honor">Academic Awardee</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CERTIFICATIONS
+       ============================================================ -->
+  <!-- <section id="certifications" class="section">
+    <div class="container">
+      <p class="section-label fade-up">Certifications</p>
+      <h2 class="section-title fade-up">Webinars &amp; Training</h2>
+      <div class="section-divider fade-up"></div>
+
+      <div class="cert-grid fade-up">
+
+        <div class="cert-card">
+          <p class="cert-icon">🏅</p>
+          <p class="cert-name">Webinar Name Placeholder</p>
+          <p class="cert-org">Organizer Placeholder</p>
+          <p class="cert-year">Year Placeholder</p>
+        </div>
+
+        <div class="cert-card">
+          <p class="cert-icon">🏅</p>
+          <p class="cert-name">Webinar Name Placeholder</p>
+          <p class="cert-org">Organizer Placeholder</p>
+          <p class="cert-year">Year Placeholder</p>
+        </div>
+
+        <div class="cert-card">
+          <p class="cert-icon">🏅</p>
+          <p class="cert-name">Webinar Name Placeholder</p>
+          <p class="cert-org">Organizer Placeholder</p>
+          <p class="cert-year">Year Placeholder</p>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="section-label fade-up">CONTACT</p>
+      <h2 class="section-title fade-up">Get In Touch</h2>
+      <div class="section-divider fade-up"></div>
+      <p class="section-subtext fade-up">Feel free to reach out for opportunities, collaborations, or just to say hi!
+      </p>
+
+      <div class="contact-grid fade-up">
+
+        <!-- Left Side: Contact Info -->
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <p class="contact-label">Email</p>
+                <a href="mailto:jasminenalda20@gmail.com" class="contact-link">jasminenalda20@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Malabon City, Philippines</p>
+              </div>
+            </div>
+
+            <div class="contact-social-info">
+              <p class="contact-label">Follow Me</p>
+              <div class="contact-social-links">
+                <a href="https://www.facebook.com/jasmine.nalda.0722/" target="_blank" rel="noopener"
+                  class="social-btn">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jasminenalda" target="_blank" rel="noopener" class="social-btn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/PinkyBun" target="_blank" rel="noopener" class="social-btn">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form-wrap">
+          <form id="contact-form" action="https://formspree.io/f/xlgzlorb" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full" id="btn-send-message">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Jasmine Nalda. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       MODAL (Project Details with Slider)
+       ============================================================ -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-box">
+      <button id="modal-close" class="modal-close-btn">&times;</button>
+
+      <!-- Slider Section -->
+      <div class="modal-slider-container">
+        <div class="modal-slides" id="modal-slides">
+          <!-- Images will be injected here via JS -->
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="slider-arrow prev" id="slider-prev">&#10094;</button>
+        <button class="slider-arrow next" id="slider-next">&#10095;</button>
+
+        <!-- Dot Indicators -->
+        <div class="slider-dots" id="slider-dots">
+          <!-- Dots will be injected here via JS -->
+        </div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-badge" id="modal-badge">Project</span>
+          <h3 id="modal-title">Project Title</h3>
+          <p class="modal-tools" id="modal-tools">Tools Used</p>
+        </div>
+        <div class="modal-body">
+          <ul id="modal-desc" class="modal-bullets">
+            <!-- Bullets will be injected here via JS -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       GALLERY OVERLAY
+       ============================================================ -->
+  <div id="gallery-overlay" class="gallery-overlay">
+    <div class="gallery-header">
+      <div class="gallery-header-text">
+        <h2>A Peek at My Work</h2>
+        <p>A glimpse of what I've worked on so far</p>
+      </div>
+      <button id="gallery-close" class="gallery-close-btn">&times;</button>
+    </div>
+
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="data">📊 Data & Reporting</button>
+      <!-- <button class="filter-btn" data-filter="docs">📝 Documentation</button> -->
+      <button class="filter-btn" data-filter="design">🎨 Design & Media</button>
+    </div>
+
+    <div class="gallery-masonry-grid" id="gallery-grid">
+      <!-- TO REPLACE: Upload your own images to images/projects/data/ folder -->
+      <!-- Data Images -->
+      <div class="masonry-item" data-category="data">
+        <img src="images/projects/data/data1.jpg" alt="Data Project 1">
+      </div>
+      <div class="masonry-item" data-category="data">
+        <img src="images/projects/data/data2.jpg" alt="Data Project 2">
+      </div>
+      <div class="masonry-item" data-category="data">
+        <img src="images/projects/data/data3.jpg" alt="Data Project 3">
+      </div>
+      <!-- TO REPLACE: Upload your own images to images/projects/docs/ folder -->
+      <!-- Docs Images -->
+      <!-- <div class="masonry-item" data-category="docs">
+        <img src="images/projects/docs/docs1.jpg" alt="Docs Project 1">
+      </div>
+      <div class="masonry-item" data-category="docs">
+        <img src="images/projects/docs/docs2.jpg" alt="Docs Project 2">
+      </div>
+      <div class="masonry-item" data-category="docs">
+        <img src="images/projects/docs/docs3.jpg" alt="Docs Project 3">
+      </div> -->
+      <!-- TO REPLACE: Upload your own images to images/projects/design/ folder -->
+      <!-- Design Images -->
+      <div class="masonry-item" data-category="design">
+        <img src="images/projects/design/design1.png" alt="Design Project 1">
+      </div>
+      <div class="masonry-item" data-category="design">
+        <img src="images/projects/design/design2.png" alt="Design Project 2">
+      </div>
+      <div class="masonry-item" data-category="design">
+        <img src="images/projects/design/design3.png" alt="Design Project 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       LIGHTBOX OVERLAY
+       ============================================================ -->
+  <div id="lightbox-overlay" class="lightbox-overlay">
+    <button id="lightbox-close" class="lightbox-close-btn">&times;</button>
+    <button class="lightbox-arrow prev" id="lightbox-prev">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Fullscreen image">
+    <button class="lightbox-arrow next" id="lightbox-next">&#10095;</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
